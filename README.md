@@ -1,6 +1,2 @@
-heeeeyyy
 # CP317-Final-Project
-Schedule App 
-
-
-Anthony was here and is really cool
+Official Name has been set to: TimeTrack 
