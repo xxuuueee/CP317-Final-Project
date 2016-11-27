@@ -1,9 +1,56 @@
 <html>
+<style>
+header {
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+</style>
+<header>
+Time Track
+</header>
 
-Time Track<br>
 
-User: <input type="text" name="user">
-Pass: <input type="text" name="pass">
-<input type="submit" value="Submit">
+
+
+
+<div id="startForm">
+    User: <input type="text" name="user"><br>
+    Pass: <input type="text" name="pass"><br>
+    <input type="submit" value="Login" onclick="loginFunction()">
+    <input type="submit" value="Create Account" onclick="registerFunction()">
+</div>
+
+
+
+
+
+<div id="registerContent" style="display: none;">
+    User: <input type="text" name="user"><br>
+    Pass: <input type="text" name="pass"><br>
+    Pass Again: <input type="text" name="pass"><br>
+    <input type="submit" value="Create" onclick="loginFunction()">
+</div>
+
+
+
+
+
+
+<script>
+function loginFunction() {
+    window.location.href = "profile.html";
+}
+
+function registerFunction() {    
+    var w = document.getElementById('startForm');
+    w.style.display = 'none';
+
+    var x = document.getElementById('registerContent'); //find the register form
+    x.style.display = 'block';//make registering form visible
+}
+</script>
+
 
 </html>
