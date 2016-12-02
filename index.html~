@@ -1,28 +1,54 @@
-<html>
-<style>
-header {
-    background-color: pink;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 50px;
-}
-</style>
-<header>
-Time Track
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+    <link href="main.css" rel="stylesheet">
 
 
-User: <input type="text" name="user"><br>
-Pass: <input type="text" name="pass"><br>
-<input type="submit" value="Login" onclick="myFunction()">
-<input type="submit" value="Register">
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="java.js"></script>
+
+    <title>TimeTrack</title>
+
+</head>
 
 
-<script>
-function myFunction() {
-    window.location.href = "profile.html";
-}
-</script>
+<body id="homepage">
+<!-- Header Main page -->
+<div data-role="page" id="home" >
+    <div class="header" data-theme="b">
+        <header>
+        <h1><center>TimeTrack</center></h1>
+        </header>
+
+
+    </div>
+
+
+    <div class="container">
+        <div class="main">
+            <form class="form" method="post" action="#">
+
+                <!--<a href=# id="logo">
+                    <center><img src="images/time.png" style="width:200px;height:150px"  /></center>
+                </a>-->
+                <label>Email :</label>
+                <input type="text" name="demail" id="email">
+                <label>Password :</label>
+                <input type="password" name="password" id="password">
+                <input type="button" name="login" id="login" value="Login">
+                <input type="button" name="signup" id="signup" value="Sign up">
+            </form>
+
+
+</div>
+</div>
+    </div>
+    </div>
+</body>
 
 
 </html>
