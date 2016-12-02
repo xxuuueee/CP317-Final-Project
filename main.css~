@@ -1,7 +1,7 @@
 div.header{
     width: 100%;
     border: 1px deeppink;
-    background-color:black;
+    background-color:pink;
 }
 
 html, body {

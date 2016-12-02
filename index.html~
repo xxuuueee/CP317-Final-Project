@@ -21,7 +21,7 @@
 <div data-role="page" id="home" >
     <div class="header" data-theme="b">
         <header>
-        <h1><center>TimeTrack</center></h1>
+        <h1><center><img src="images/timeTrackLogo.png"></center></h1>
         </header>
 
 
