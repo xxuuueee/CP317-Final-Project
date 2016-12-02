@@ -1,0 +1,16 @@
+div.header{
+    width: 100%;
+    border: 1px deeppink;
+    background-color:pink;
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    html, body {
+        font-size: 50%;
+    }
+}

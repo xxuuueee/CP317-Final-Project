@@ -1,56 +1,53 @@
-<html>
-<style>
-header {
-    background-color: pink;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 50px;
-}
-</style>
-<header>
-Time Track
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="style" type="text/css" href="main.css">
+
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="java.js"></script>
+
+    <title>TimeTrack</title>
+
+</head>
 
 
+<body id="homepage">
+<!-- Header Main page -->
+<div data-role="page" id="home" >
+    <div class="header" data-theme="b">
+        <header>
+        <h1><center>TimeTrack</center></h1>
+        </header>
 
 
+    </div>
 
-<div id="startForm">
-    User: <input type="text" name="user"><br>
-    Pass: <input type="text" name="pass"><br>
-    <input type="submit" value="Login" onclick="loginFunction()">
-    <input type="submit" value="Create Account" onclick="registerFunction()">
+
+    <div class="container">
+        <div class="main">
+            <form class="form" method="post" action="#">
+
+                <!--<a href=# id="logo">
+                    <center><img src="images/time.png" style="width:200px;height:150px"  /></center>
+                </a>-->
+                <label>Email :</label>
+                <input type="text" name="demail" id="email">
+                <label>Password :</label>
+                <input type="password" name="password" id="password">
+                <input type="button" name="login" id="login" value="Login">
+                <input type="button" name="signup" id="signup" value="Sign up">
+            </form>
+
+
 </div>
-
-
-
-
-
-<div id="registerContent" style="display: none;">
-    User: <input type="text" name="user"><br>
-    Pass: <input type="text" name="pass"><br>
-    Pass Again: <input type="text" name="pass"><br>
-    <input type="submit" value="Create" onclick="loginFunction()">
 </div>
-
-
-
-
-
-
-<script>
-function loginFunction() {
-    window.location.href = "profile.html";
-}
-
-function registerFunction() {    
-    var w = document.getElementById('startForm');
-    w.style.display = 'none';
-
-    var x = document.getElementById('registerContent'); //find the register form
-    x.style.display = 'block';//make registering form visible
-}
-</script>
+    </div>
+    </div>
+</body>
 
 
 </html>
