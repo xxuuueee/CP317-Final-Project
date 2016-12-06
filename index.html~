@@ -21,7 +21,7 @@
 <div data-role="page" id="home" >
     <div class="header" data-theme="b">
         <header>
-        <h1><center><img src="images/timeTrackLogo.png"></center></h1>
+        <h1><center><img src="images/timeTrackLogo.png" height="70px"></center></h1>
         </header>
 
 
@@ -41,6 +41,26 @@
                 <input type="password" name="password" id="password">
                 <input type="button" name="login" id="login" value="Login">
                 <input type="button" name="signup" id="signup" value="Sign up">
+<p id="demo"></p>
+
+<script>
+
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+
+ $.ajax({
+        url: "loginDetails.csv",
+        dataType: 'text',
+        cache: false
+ }).done(function(csvAsString){
+        csvAsArray=csvAsString.csvToArray();
+        document.getElementById("demo").innerHTML = csvAsArray + "<br>" + carName2;
+
+ });
+
+
+
+</script>
             </form>
 
 
@@ -48,6 +68,7 @@
 </div>
     </div>
     </div>
+
 </body>
 
 

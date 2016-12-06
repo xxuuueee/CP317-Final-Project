@@ -41,6 +41,45 @@
                 <input type="password" name="password" id="password">
                 <input type="button" name="login" id="login" value="Login">
                 <input type="button" name="signup" id="signup" value="Sign up">
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5kBeLf09lwZBx_hFa0j73_2BaoKpfJZ8",
+    authDomain: "cp317timetrack.firebaseapp.com",
+    databaseURL: "https://cp317timetrack.firebaseio.com",
+    storageBucket: "cp317timetrack.appspot.com",
+    messagingSenderId: "800102312098"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+firebase.database().ref('users/' + "4").set({
+    user: "Passwordasdf",
+    pass: "USernameasdfsafasdfafdas"
+  });  
+
+
+</script>
+
+
+
+
+
+
+
+
+
             </form>
 
 
@@ -48,6 +87,7 @@
 </div>
     </div>
     </div>
+
 </body>
 
 
