@@ -21,7 +21,7 @@
 <div data-role="page" id="home" >
     <div class="header" data-theme="b">
         <header>
-        <h1><center><img src="images/timeTrackLogo.png"></center></h1>
+        <h1><center><img src="images/timeTrackLogo.png" height="70px"></center></h1>
         </header>
 
 
@@ -40,7 +40,50 @@
                 <label>Password :</label>
                 <input type="password" name="password" id="password">
                 <input type="button" name="login" id="login" value="Login">
+<<<<<<< HEAD
                 <input type="button" name="signup" id="signup" value="Sign up">
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5kBeLf09lwZBx_hFa0j73_2BaoKpfJZ8",
+    authDomain: "cp317timetrack.firebaseapp.com",
+    databaseURL: "https://cp317timetrack.firebaseio.com",
+    storageBucket: "cp317timetrack.appspot.com",
+    messagingSenderId: "800102312098"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+firebase.database().ref('users/' + "4").set({
+    user: "Passwordasdf",
+    pass: "USernameasdfsafasdfafdas"
+  });  
+
+
+</script>
+
+
+
+
+
+
+
+
+
+=======
+                <!--<input type="button" name="signup" id="signup" value="Sign up">-->
+>>>>>>> 667b282552b6ea8af60731038998e28cfbc5619c
             </form>
 
 
@@ -48,6 +91,7 @@
 </div>
     </div>
     </div>
+
 </body>
 
 
