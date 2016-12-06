@@ -3,12 +3,157 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
-    <link rel="style" href="main.css">
+    <link rel="stylesheet" href="main.css">
     <script src="jquery/jquery-1.11.3.min.js"></script>
     <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="java.js"></script>
 
 </head>
-<body>
 
+<body id="homepage">
+<!-- Header Main page -->
+<div data-role="page" id="home"  >
+    <div data-role="header" data-theme="b"  >
+
+        <a href="index.html" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+        <h1><center><img src="images/timeTrackLogo.png" height="70px"></center></h1>
+        <a href="index.html" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    </div>
+
+
+    <div>
+    <!--TABLE FOR EMPLOYEE AVAILABILITY-->
+<h2><center><font size="3"> Enter Availability </font></center></h2>
+<table border="0" cellpadding="50" cellspacing="20">
+    <tr>
+        <td align=top valign=top bgcolor="#90EE90">
+            <font size="2">Monday</font>
+            <br>
+            <br><br>
+            <form id="box">
+                <font size="2">Starting time:</font>
+                <input type="text" name="start">
+                <br>
+                <font size="2">Ending time:</font>
+                <input type="text" name="end">
+            </form>
+        </td><td align=top valign=top>
+        <font size="2">Tuesday</font>
+        <br>
+        <br><br>
+        <form id="box">
+            <font size="2">Starting time:</font>
+            <input type="text" name="start">
+            <br>
+            <font size="2">Ending time:</font>
+            <input type="text" name="end">
+        </form>
+    </td><td align=top valign=top bgcolor="#90EE90">
+        <font size="2">Wednesday</font>
+        <br>
+        <br><br>
+        <form id="box">
+            <font size="2">Starting time:</font>
+            <input type="text" name="start">
+            <br>
+            <font size="2">Ending time:</font>
+            <input type="text" name="end">
+        </form>
+        </td><td align=center valign=top>
+        <font size="2">Thursday</font>
+        <br>
+        <br><br>
+        <form id="box">
+            <font size="2">Starting time:</font>
+            <input type="text" name="start">
+            <br>
+            <font size="2">Ending time:</font>
+            <input type="text" name="end">
+        </form>
+        </td><td align=center valign=top bgcolor="#90EE90">
+        <font size="2">Friday</font>
+        <br>
+        <br><br>
+        <form id="box">
+            <font size="2">Starting time:</font>
+            <input type="text" name="start">
+            <br>
+            <font size="2">Ending time:</font>
+            <input type="text" name="end">
+        </form>
+        </td><td align=center valign=top>
+        <font size="2">Saturday</font>
+        <br>
+        <br><br>
+        <form id="box">
+            <font size="2">Starting time:</font>
+            <input type="text" name="start">
+            <br>
+            <font size="2">Ending time:</font>
+            <input type="text" name="end">
+        </form>
+        </td><td align=center valign=top bgcolor="#90EE90">
+        <font size="2">Sunday</font>
+        <br>
+        <br><br>
+        <form id="box">
+            <font size="2">Starting time:</font>
+            <input type="text" name="start">
+            <br>
+            <font size="2">Ending time:</font>
+            <input type="text" name="end">
+        </form>
+        </td>
+    </tr>
+</table>
+
+    <input type="button" name="submit" id="submit" value="Submit">
+    </div>
+
+
+<!--TABLE FOR THIS WEEKS SCHEDULE-->
+    <div>
+<h2><center><font size="3"> This week's schedule </font></center></h2>
+<table border="0" cellpadding="50" cellspacing="20">
+    <tr>
+        <td align=top valign=top >
+            <font size="2">Monday</font>
+            <br>
+            <br><br>
+
+        </td><td align=top valign=top bgcolor="#90EE90">
+        <font size="2">Tuesday</font>
+        <br>
+        <br><br>
+
+    </td><td align=top valign=top >
+        <font size="2">Wednesday</font>
+        <br>
+        <br><br>
+
+    </td><td align=center valign=top bgcolor="#90EE90">
+        <font size="2">Thursday</font>
+        <br>
+        <br><br>
+
+    </td><td align=center valign=top >
+        <font size="2">Friday</font>
+        <br>
+        <br><br>
+
+    </td><td align=center valign=top bgcolor="#90EE90">
+        <font size="2">Saturday</font>
+        <br>
+        <br><br>
+
+    </td><td align=center valign=top >
+        <font size="2">Sunday</font>
+        <br>
+        <br><br>
+
+    </td>
+    </tr>
+</table>
+    </div>
+</div>
 </body>
