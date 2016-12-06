@@ -40,27 +40,50 @@
                 <label>Password :</label>
                 <input type="password" name="password" id="password">
                 <input type="button" name="login" id="login" value="Login">
+<<<<<<< HEAD
                 <input type="button" name="signup" id="signup" value="Sign up">
-<p id="demo"></p>
 
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
 <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5kBeLf09lwZBx_hFa0j73_2BaoKpfJZ8",
+    authDomain: "cp317timetrack.firebaseapp.com",
+    databaseURL: "https://cp317timetrack.firebaseio.com",
+    storageBucket: "cp317timetrack.appspot.com",
+    messagingSenderId: "800102312098"
+  };
+  firebase.initializeApp(config);
 
-var carName1 = "Volvo XC60";
-var carName2 = 'Volvo XC60';
-
- $.ajax({
-        url: "loginDetails.csv",
-        dataType: 'text',
-        cache: false
- }).done(function(csvAsString){
-        csvAsArray=csvAsString.csvToArray();
-        document.getElementById("demo").innerHTML = csvAsArray + "<br>" + carName2;
-
- });
-
+  var database = firebase.database();
+firebase.database().ref('users/' + "4").set({
+    user: "Passwordasdf",
+    pass: "USernameasdfsafasdfafdas"
+  });  
 
 
 </script>
+
+
+
+
+
+
+
+
+
+=======
+                <!--<input type="button" name="signup" id="signup" value="Sign up">-->
+>>>>>>> 667b282552b6ea8af60731038998e28cfbc5619c
             </form>
 
 
