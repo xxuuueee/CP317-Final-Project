@@ -69,15 +69,25 @@ $( document ).on( "pageinit", function() {
         }
     });
 
-    $("#signup").click(function () {
-        $.mobile.changePage("Signup.html", {
-            transition: "pop",
-            reverse: false,
-            changeHash: true,
 
-        });
 
-    });
+    $("#submit").click(function() {
+        var smon=$("#s1").val();
+        var stue=$("#s2").val();
+        var swed=$("#s3").val();
+        var sth=$("#s4").val();
+        var sfr=$("#s5").val();
+        var sst=$("#s6").val();
+        var ssun=$("#s7").val();
+        var emon=$("#e1").val();
+        var etue=$("#e2").val();
+        var ewed=$("#e3").val();
+        var eth=$("#e4").val();
+        var efr=$("#e5").val();
+        var est=$("#e6").val();
+        var esun=$("#e7").val();
+        alert("Your hours have been submitted!");
+    })
 
 
 
