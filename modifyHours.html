@@ -7,10 +7,24 @@
     <script src="jquery/jquery-1.11.3.min.js"></script>
     <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="java.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA5kBeLf09lwZBx_hFa0j73_2BaoKpfJZ8",
+            authDomain: "cp317timetrack.firebaseapp.com",
+            databaseURL: "https://cp317timetrack.firebaseio.com",
+            storageBucket: "cp317timetrack.appspot.com",
+            messagingSenderId: "800102312098"
+        };
+        firebase.initializeApp(config);
+
+    window.onload = loadHours();
+    </script>
 
 </head>
 
-<body id="homepage">
+<body id="homepage" >
 <!-- Header Main page -->
 <div data-role="page" id="home"  >
     <div data-role="header" data-theme="b"  >
@@ -24,6 +38,7 @@
     <div>
     <!--TABLE FOR EMPLOYEE AVAILABILITY-->
 <h2><center><font size="3"> Enter Availability </font></center></h2>
+
 <table border="0" cellpadding="50" cellspacing="20">
     <tr>
         <td align=top valign=top bgcolor="#90EE90">
@@ -31,129 +46,130 @@
             <br>
             <br><br>
             <form >
-                <font size="2">Starting time:</font>
+                <font size="2">Hours wanted:</font>
                 <input id="s1" type="text" name="start">
                 <br>
-                <font size="2">Ending time:</font>
-                <input id="e1" type="text" name="end">
+
             </form>
         </td><td align=top valign=top>
         <font size="2">Tuesday</font>
         <br>
         <br><br>
         <form >
-            <font size="2">Starting time:</font>
+            <font size="2">Hours wanted</font>
             <input id="s2" type="text" name="start">
             <br>
-            <font size="2">Ending time:</font>
-            <input id="e2" type="text" name="end">
+
         </form>
     </td><td align=top valign=top bgcolor="#90EE90">
         <font size="2">Wednesday</font>
         <br>
         <br><br>
         <form >
-            <font size="2">Starting time:</font>
+            <font size="2">Hours Wanted:</font>
             <input id="s3" type="text" name="start">
             <br>
-            <font size="2">Ending time:</font>
-            <input id="e3" type="text" name="end">
+
         </form>
         </td><td align=center valign=top>
         <font size="2">Thursday</font>
         <br>
         <br><br>
         <form >
-            <font size="2">Starting time:</font>
+            <font size="2">Hours Wanted:</font>
             <input id="s4" type="text" name="start">
             <br>
-            <font size="2">Ending time:</font>
-            <input id="e4" type="text" name="end">
+
         </form>
         </td><td align=center valign=top bgcolor="#90EE90">
         <font size="2">Friday</font>
         <br>
         <br><br>
         <form >
-            <font size="2">Starting time:</font>
+            <font size="2">Hours Wanted:</font>
             <input id="s5" type="text" name="start">
             <br>
-            <font size="2">Ending time:</font>
-            <input id="e5" type="text" name="end">
+
         </form>
         </td><td align=center valign=top>
         <font size="2">Saturday</font>
         <br>
         <br><br>
         <form >
-            <font size="2">Starting time:</font>
+            <font size="2">Hours Wanted:</font>
             <input id="s6" type="text" name="start">
             <br>
-            <font size="2">Ending time:</font>
-            <input id="e6" type="text" name="end">
+
         </form>
         </td><td align=center valign=top bgcolor="#90EE90">
         <font size="2">Sunday</font>
         <br>
         <br><br>
         <form >
-            <font size="2">Starting time:</font>
+            <font size="2">Hours Wanted:</font>
             <input id="s7" type="text" name="start">
             <br>
-            <font size="2">Ending time:</font>
-            <input id="e7" type="text" name="end">
+
         </form>
         </td>
     </tr>
 </table>
 
-    <input type="button" name="submit" id="submit" value="Submit">
+    <input type="button" name="submit" id="submit" value="Update desired hours">
     </div>
 
 
 <!--TABLE FOR THIS WEEKS SCHEDULE-->
     <div>
 <h2><center><font size="3"> This week's schedule </font></center></h2>
-<table border="0" cellpadding="50" cellspacing="20">
+<table class="hours" border="0" cellpadding="50" cellspacing="20">
     <tr>
         <td align=top valign=top >
             <font size="2">Monday</font>
             <br>
             <br><br>
+            <p id="m">  </p>
 
         </td><td align=top valign=top bgcolor="#90EE90">
         <font size="2">Tuesday</font>
         <br>
         <br><br>
+        <p id="t">  </p>
 
     </td><td align=top valign=top >
         <font size="2">Wednesday</font>
         <br>
         <br><br>
+        <p id="w">  </p>
 
     </td><td align=center valign=top bgcolor="#90EE90">
         <font size="2">Thursday</font>
         <br>
         <br><br>
+        <p id="th">  </p>
 
     </td><td align=center valign=top >
         <font size="2">Friday</font>
         <br>
         <br><br>
+        <p id="f">  </p>
 
     </td><td align=center valign=top bgcolor="#90EE90">
         <font size="2">Saturday</font>
         <br>
         <br><br>
+        <p id="s">  </p>
 
     </td><td align=center valign=top >
         <font size="2">Sunday</font>
         <br>
         <br><br>
+        <p id="sn">  </p>
 
     </td>
     </tr>
 </table>
+        <input type="button" name="hours" id="hours" value="Get current week's hours">
     </div>
 </div>
 </body>
